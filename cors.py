@@ -3,6 +3,7 @@ import os
 import requests
 import subprocess
 import sys
+from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
