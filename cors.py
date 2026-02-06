@@ -117,6 +117,4 @@ def cors_proxy_404(e):
     return Response(resp.content, resp.status_code, headers)
 
 if __name__ == "__main__":
-    if os.environ.get("WERKZEUG_RUN_MAIN") != "true":
-        start_processes()
-    app.run(host="0.0.0.0", port=7860)
+    app.run(host="0.0.0.0", port=7864)
